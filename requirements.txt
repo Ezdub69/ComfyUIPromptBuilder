@@ -1,0 +1,2 @@
+PySide6>=6.7,<7
+pyspellchecker>=0.8,<1
