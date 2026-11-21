@@ -49,8 +49,29 @@ C:\Users\<your username>\.lmstudio\models
 
 (Your main OS drive → Users → your username → `.lmstudio` → `models`.)
 
-Inside the `models` folder, create a folder named `mradermacher`, and put both downloaded
-files into it.
+Inside the `models` folder, create a folder named `mradermacher`. Inside that, create a
+second folder named `Qwen3-VL-8B-NSFW-Caption-V4.5-heretic-i1-GGUF`, and put both downloaded
+files into it. You should end up with:
+
+```
+models\mradermacher\Qwen3-VL-8B-NSFW-Caption-V4.5-heretic-i1-GGUF\
+    Qwen3-VL-8B-NSFW-Caption-V4.5-heretic.i1-Q4_K_S.gguf
+    mmproj-Qwen3-VL-8B-Instruct-F16.gguf
+```
+
+Both folder levels matter - LM Studio only lists models laid out as
+`models\<publisher>\<model folder>\<file>.gguf`. Files placed directly in `models` or
+directly in `mradermacher` won't show up.
+
+> **Keeping your models on a different drive?** That's fine, but LM Studio has to be told
+> where they are. In LM Studio, open **My Models** (the folder icon on the left-hand
+> sidebar) - the models directory is shown at the top. Change it to your folder on the
+> other drive (the one that contains `mradermacher`, not `mradermacher` itself), and use
+> the same two-level folder layout inside it.
+
+Before moving on, check that the model is listed under **My Models** in LM Studio. If it
+isn't listed there, the app won't be able to detect it either - the app only shows what
+LM Studio itself reports.
 
 ### Turn on LM Studio's local server
 
